@@ -1,11 +1,12 @@
-#Copp CALC 0.4.3 by coppery
+#Copp CALC 0.4.4 by coppery
 #Changelog
 #Uses f strings now
 #has modules and floors
-version="0.4.3"
+#modulus
+version="0.4.4"
 
 print(f"""Welcome to Calc {version} by coppery!!!
-this version has addition, subtraction, multiplication, division, floor division, and powers!
+this version has addition, subtraction, multiplication, division, floor division, modulus, and powers!
 i hope you use this well :]""")
 input("Press ENTER to start")
 
@@ -49,7 +50,15 @@ print(f"""Equation: {flr1} // {flr2}
       solution: {str(flrsol)}""")
 input("Press ENTER to continue")
 
-print("Equation 6 Powers (^)")
+print("Equation 6 Modulus (Remainder)")
+mod1=input("Give the first number: ")
+mod2=input("Give the second number: ")
+modsol=float(mod1) % float(mod2)
+print(f"""Equation: {mod1} // {mod2}
+      solution: {str(modsol)}""")
+input("Press ENTER to continue")
+
+print("Equation 7 Powers (^)")
 pow1=input("Give the first number: ")
 pow2=input("Give the second number: ")
 powsol=float(pow1) ** float(pow2)
